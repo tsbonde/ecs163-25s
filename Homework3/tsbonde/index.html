@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallel Coordinates - DS Salaries</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body { font-family: sans-serif; }
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    .foreground {
+      stroke: steelblue;
+    }
+    .background {
+      stroke: #ccc;
+    }
+    #viewSelector {
+      margin: 20px;
+      padding: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+    <select id="viewSelector" style="margin-left: 1240px; margin-top: 10px; font-size: 12px; width: 140px; padding: 2px 5px;">
+        <option value="univariate">Average Salary by Employment Type</option>
+        <option value="bivariate">Avg Salary by Employment Type + Experience</option>
+      </select>
+
+    
+
+  <!-- ▼ LOAD SCRIPT AFTER ELEMENT IS DEFINED -->
+  <script src="main.js"></script>
+
+</body>
+</html>
